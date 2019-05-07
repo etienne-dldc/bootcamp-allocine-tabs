@@ -1,18 +1,13 @@
 import React from 'react';
 import Tabs from './Tabs';
-import PopularMovies from './PopularMovies';
-import UpcomingMovies from './UpcomingMovies';
-import TopMovies from './TopMovies';
+import MoviesList from './MoviesList';
 
 const Content = props => {
-  const { currentPage, onTabNavigation } = props;
+  const { currentPage, onTabNavigation, moviesData } = props;
 
-  let content = <PopularMovies />;
-  if (currentPage === 'upcoming') {
-    content = <UpcomingMovies />;
-  }
-  if (currentPage === 'top') {
-    content = <TopMovies />;
+  let content = <div>Loading...</div>;
+  if (moviesData !== null) {
+    content = <MoviesList moviesArray={moviesData.results} />;
   }
 
   return (
