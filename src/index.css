@@ -1,14 +1,96 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.header {
+  background: #fecd02;
+  height: 80px;
+}
+
+.header img {
+  height: 70%;
+}
+
+.header-centered {
+  width: 90vw;
+  max-width: 960px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.content-centered {
+  width: 90vw;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.tabs-items {
+  display: flex;
+  padding: 0;
+}
+
+.tabs-items li {
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 1.7rem;
+  margin-right: 2.4rem;
+  cursor: pointer;
+}
+
+.movie-card {
+  height: 300px;
+  flex: 1;
+  min-width: 400px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  margin: 15px;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.movie-card-poster {
+  height: 100%;
+}
+
+.movie-card-content {
+  flex: 1;
+  padding: 0rem 1rem;
+  overflow: auto;
+}
+
+.movie-card-content h3 {
+  margin-bottom: 0;
+  margin-top: 0.8rem;
+}
+
+.movie-card-date {
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+  color: #7e7e7e;
+  font-weight: 500;
+}
+
+.movie-card-overview {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.movies-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 -15px 40px -15px;
 }
