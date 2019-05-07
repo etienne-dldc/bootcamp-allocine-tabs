@@ -5,7 +5,7 @@ import MoviesList from './MoviesList';
 const Content = props => {
   const { currentPage, onTabNavigation, moviesData } = props;
 
-  let content = <div>Loading...</div>;
+  let content = <div>Loading movies...</div>;
   if (moviesData !== null) {
     content = <MoviesList moviesArray={moviesData.results} />;
   }
